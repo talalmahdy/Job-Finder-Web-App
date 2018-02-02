@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="Job_Portal_Web_App.Admin.AdminMasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta charset="utf-8">
+<title>Home -  EBLA</title>
+<link href="../Style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<form id="form2" runat="server">
+<table width="800" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td class="topheading">EBLA <font size="+1">Job Portal</font><br><font size="+1">Admin Panel</font></td>
+    </tr>
+    <tr>
+      <td class="topmenu" valign="bottom"><table width="0" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td><a href="Home.aspx">Home</a></td>
+      <td><a href="AddNewJobs.aspx">Add Job</a></td>
+      <td><a href="ViewJobs.aspx">View/Edit/Delete Jobs</a></td>
+      <td><a href="ViewResumes.aspx">View/Delete/Download Resumes</a></td>
+    </tr>
+  </tbody>
+</table>
+</td>
+    </tr>
+     
+    <tr>
+      <td class="mainarea" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td colspan="2"><img src="../images/img03.jpg" width="800" height="184" alt=""/></td>
+      </tr>
+    <tr>
+      <td width="23%">&nbsp;</td>
+      <td width="77%">&nbsp;</td>
+    </tr>
+	<tr>
+		<td colspan="2" valign="top" height="200px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+		</td>      
+    </tr>
+  </tbody>
+</table>
+&nbsp;</td>
+    </tr>
+    <tr class="footer">
+      <td>EBLA Computer Consultancy © All Rights Reserved.</td>
+    </tr>
+  </tbody>
+</table>
+
+</form>
+</body>
+</html>
