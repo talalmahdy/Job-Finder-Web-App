@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Job_Portal_Web_App.MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta charset="utf-8">
+<title>Home -  EBLA</title>
+<link href="Style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<form id="form1" runat="server">
+<table width="800" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td class="topheading">EBLA <font size="+1">Job Portal</font></td>
+    </tr>
+    <tr>
+      <td class="topmenu" valign="bottom"><table width="0" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td><a href="Home.aspx">Home</a></td>
+      <td><a href="About.aspx">About</a></td>
+      <td><a href="Contact.aspx">Contact</a></td>
+      <td><a href="Jobs.aspx">Jobs</a></td>
+      <td><asp:LinkButton ID="SignUpUserProfileLabel" runat="server" OnClick="SignUpUserProfileLabel_Click" ValidationGroup="SignUp">Sign Up</asp:LinkButton></td>
+      <td><asp:LinkButton ID="LoginLogoutLabel" runat="server" OnClick="LoginLogoutLabel_Click" ValidationGroup="Login">Login</asp:LinkButton></td>
+    </tr>
+  </tbody>
+</table>
+</td>
+    </tr>
+    <tr>
+      <td class="mainarea" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td colspan="2"><img src="images/img03.jpg" width="800" height="184" alt=""/></td>
+      </tr>
+    <tr>
+      <td width="23%">&nbsp;</td>
+      <td width="77%">&nbsp;</td>
+    </tr>
+	<tr>
+      <td class="lefttext" valign="top"><h2><br>Latest News</h2>
+		  <marquee direction="up" scrolldelay="100" scrollamount="3" height="260px">
+			  <h4>August 1, 2017</h4>Job Portal now open! <br> Welcome to our new Website!
+              <h4>August 5, 2017</h4>New Jobs Added! <br> Visit our Jobs Section and Apply Now!
+		  </marquee>
+		  
+		</td>
+      <td valign="top" class="main"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td> <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="12px" PathSeparator=" > ">
+                <CurrentNodeStyle CssClass="currentnode"/>
+                <NodeStyle CssClass="link" />
+                <PathSeparatorStyle CssClass="currentnode" />
+                <RootNodeStyle CssClass="link" />
+                </asp:SiteMapPath> </td>
+          </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
+                </td>
+            </tr>    
+        </tbody>         
+      </table></td>
+    </tr>
+  </tbody>
+</table>
+&nbsp;</td>
+    </tr>
+    <tr class="footer">
+      <td>EBLA Computer Consultancy © All Rights Reserved.</td>
+    </tr>
+  </tbody>
+</table>
+</form>
+</body>
+</html>
+
+
